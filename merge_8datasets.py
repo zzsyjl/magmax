@@ -115,8 +115,8 @@ if __name__ == '__main__':
     wandb.init(
         project="magmax",
         group=f"merging-8datasets",
-        entity=args.wandb_entity_name,
-        mode='online',
+        entity="zzsyjl",
+        mode='disabled',
         name=f"merging-8datasets-{method}",
         config=args,
         tags=["merging", "8datasets", {method}],

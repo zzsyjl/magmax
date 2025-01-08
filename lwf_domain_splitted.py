@@ -51,8 +51,8 @@ def finetune(args, eval_0shot=False, only_eval_0shot=False):
             wandb.init(
                 project="magmax",
                 group="ft-DIL",
-                entity=args.wandb_entity_name,
-                mode='online',
+                entity="zzsyjl",
+                mode='disabled',
                 name=f"{name}-" + ','.join(args.subset_config['domains']),
                 config=args,
                 reinit=True,
